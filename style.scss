@@ -8,9 +8,13 @@ body {
   font-size: 15px;
   color: $transparentWhitePara;
   padding: 0;
-  margin: 0;
+  margin: 5rem 1rem;
   box-sizing: border-box;
-  width: 400px;
+}
+.parent-container {
+  max-width: 325px;
+  margin: auto;
+  margin-top: 5%;
 }
 .car-type-heading {
   font-family: "Big Shoulders Display", cursive;
@@ -23,6 +27,8 @@ body {
   font-weight: 400;
   font-size: 0.75rem;
   color: $transparentWhitePara;
+  width: 80%;
+  line-height: 1.25rem;
 }
 .button-learn-more {
   border-radius: 1rem;
@@ -31,22 +37,19 @@ body {
   font-family: "Lexend Deca", sans-serif;
   border: 1px solid $veryLightGrayBgrndHdngBtn;
   padding: 0.5rem;
+  margin-top: 0.5rem;
 }
 .button-learn-more:hover {
   cursor: pointer;
   color: $transparentWhitePara;
   background-color: transparent;
 }
-.parent-container {
-  max-width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
+
 /* styles for sedan wrapper */
 .sedans-inner-wrapper {
   background-color: $brightOrange;
   padding: 3rem;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 .sedans-inner-wrapper button {
   color: $brightOrange;
@@ -64,8 +67,24 @@ body {
 .luxury-inner-wrapper {
   background-color: $veryDarkCyan;
   padding: 3rem;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 .luxury-inner-wrapper button {
   color: $veryDarkCyan;
+}
+
+@media (min-width: 1440px) {
+  .parent-container {
+    display: flex;
+    max-width: 80vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30vh;
+  }
+  .sedans-inner-wrapper {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .luxury-inner-wrapper {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
 }

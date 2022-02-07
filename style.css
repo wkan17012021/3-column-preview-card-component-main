@@ -1,6 +1,6 @@
 body {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.75);
+  background-color: #f0f0f0;
   padding: 0;
   margin: 5rem 1rem;
   -webkit-box-sizing: border-box;
@@ -16,6 +16,7 @@ body {
 .car-type-heading {
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
+  color: #f2f2f2;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -24,7 +25,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: #f0f0f0;
   width: 80%;
   line-height: 1.25rem;
 }
@@ -41,7 +42,7 @@ body {
 
 .button-learn-more:hover {
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.75);
+  color: #f0f0f0;
   background-color: transparent;
 }
 
